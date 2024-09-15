@@ -1,0 +1,141 @@
+/* EmployeeList.css */
+
+/* Container for the employee list table */
+.employee-list-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.employee-list-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Table styling */
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employee-table thead {
+  background-color: #007bff;
+  color: white;
+}
+
+.employee-table th,
+.employee-table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.employee-table th {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.employee-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Image styling */
+.employee-table img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Button styling for Edit/Delete */
+.employee-table .edit-btn,
+.employee-table .delete-btn,
+.employee-table .save-btn,
+.employee-table .cancel-btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Edit button specific styles */
+.employee-table .edit-btn {
+  background-color: #ffc107;
+  color: white;
+}
+
+.employee-table .edit-btn:hover {
+  background-color: #e0a800;
+}
+
+/* Save button specific styles */
+.employee-table .save-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.employee-table .save-btn:hover {
+  background-color: #218838;
+}
+
+/* Cancel button specific styles */
+.employee-table .cancel-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.employee-table .cancel-btn:hover {
+  background-color: #5a6268;
+}
+
+/* Delete button specific styles */
+.employee-table .delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.employee-table .delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Input fields for editing */
+.employee-table input[type="text"],
+.employee-table input[type="email"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 90%;
+}
+
+.employee-table input[type="text"]:focus,
+.employee-table input[type="email"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .employee-table th,
+  .employee-table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .employee-table .edit-btn,
+  .employee-table .delete-btn,
+  .employee-table .save-btn,
+  .employee-table .cancel-btn {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}

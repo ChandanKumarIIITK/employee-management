@@ -8,7 +8,8 @@ const employeeSchema = new mongoose.Schema({
   gender: { type: String, required: true },
   course: { type: [String], required: true },
   image: { type: String }, // This field stores the filename of the uploaded image
-  createdAt: { type: Date, default: Date.now }
+  createdAt: { type: Date, default: Date.now },
+  admin: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true }
 });
 
 module.exports = mongoose.model('Employee', employeeSchema);

@@ -9,22 +9,23 @@ function AdminAuth() {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
+  // Handle form submission for both Register and Login
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
       const url = isRegister
-        ? 'http://localhost:5000/api/auth/register'
-        : 'http://localhost:5000/api/auth/login';
+        ? 'http://localhost:5000/api/auth/register' // Register API
+        : 'http://localhost:5000/api/auth/login'; // Login API
 
       const response = await axios.post(url, {
         username,
         password,
       });
 
-      // Save the token to local storage and navigate to dashboard
+      // Save the token to local storage and navigate to the dashboard
       localStorage.setItem('token', response.data.token);
-      navigate('/dashboard');
+      navigate('/dashboard'); // Redirect to the dashboard after login or registration
     } catch (error) {
       alert(isRegister ? 'Error in registration' : 'Invalid login credentials');
     }

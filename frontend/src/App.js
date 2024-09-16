@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Login from './components/Login';
-import Register from './components/Register';  // New Register Component
+import AdminAuth from './components/AdminAuth'; // New component for Register/Login
 import Dashboard from './pages/Dashboard';
 import EmployeeList from './components/EmployeeList';
 import EmployeeForm from './components/EmployeeForm';
@@ -11,8 +10,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/register" element={<Register />} />  {/* New Route for Register */}
+        <Route path="/" element={<AdminAuth />} /> {/* Default route for Register/Login */}
         <Route
           path="/dashboard"
           element={

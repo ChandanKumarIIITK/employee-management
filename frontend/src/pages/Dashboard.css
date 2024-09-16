@@ -1,0 +1,58 @@
+/* Dashboard.css */
+
+/* Dashboard container */
+.dashboard-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f5f6fa;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Dashboard header */
+  .dashboard-container h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  /* Dashboard actions (button container) */
+  .dashboard-actions {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Button styling for Manage Employees */
+  .dashboard-btn {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dashboard-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .dashboard-container {
+      padding: 15px;
+    }
+  
+    .dashboard-container h2 {
+      font-size: 24px;
+    }
+  
+    .dashboard-btn {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+  

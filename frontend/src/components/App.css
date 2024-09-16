@@ -45,7 +45,7 @@ input, select {
   border-radius: 4px;
 }
 
-/* Navbar Styles */
+/* Navbar Styles 
 .navbar {
   background-color: #007bff;
   padding: 10px;
@@ -63,7 +63,7 @@ input, select {
   text-decoration: none;
   margin-left: 10px;
 }
-
+*/
 /* Login Page */
 .login-container {
   max-width: 400px;
@@ -79,7 +79,7 @@ input, select {
   margin-bottom: 20px;
 }
 
-/* Dashboard Page */
+/* Dashboard Page 
 .dashboard {
   margin-top: 40px;
   text-align: center;
@@ -89,7 +89,7 @@ input, select {
   margin-bottom: 40px;
 }
 
-/* Employee Form Styling */
+/* Employee Form Styling 
 .employee-form {
   margin-top: 40px;
   background-color: white;
@@ -120,8 +120,8 @@ input, select {
   background-color: #0056b3;
 }
 
-
-/* Employee Form and List */
+*/
+/* Employee Form and List 
 .employee-form, .employee-list {
   margin-top: 40px;
   background-color: white;
@@ -156,3 +156,4 @@ input, select {
 .employee-form input[type="file"] {
   padding: 3px;
 }
+*/

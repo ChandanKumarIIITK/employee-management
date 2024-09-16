@@ -4,7 +4,7 @@ const { createEmployee, getEmployees, updateEmployee, deleteEmployee } = require
 const authMiddleware = require('../middleware/authMiddleware');
 
 router.post('/',authMiddleware, createEmployee);
-router.get('/', getEmployees);
+router.get('/',authMiddleware, getEmployees);
 router.put('/:id', updateEmployee);
 router.delete('/:id', deleteEmployee);
 
